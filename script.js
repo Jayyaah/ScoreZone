@@ -7,6 +7,7 @@ function addCard() {
         <h3>${cardName}</h3>
         <p>${cardCategory}</p>
         <p>${cardNote}</p>
+        <button type="button" onclick="this.parentElement.remove()">Supprimer</button>
     `;
     document.getElementById('list').appendChild(cardList);
 }
