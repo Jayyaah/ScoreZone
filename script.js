@@ -3,7 +3,7 @@ function addCard() {
     const cardCategory = document.getElementById('category').value;
     const cardNote = document.getElementById('note').value;
 
-    if (cardName === '' && cardNote === '') {
+    if (cardName === '' || cardNote === '') {
         alert('Veuillez remplir les champs "Nom de la carte" et "Note".');
         return;
     }
