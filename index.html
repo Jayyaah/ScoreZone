@@ -14,15 +14,16 @@
   <p>⚽ Foot</p>
   <p>Note : 10/10</p>
 </div>
-<form action="/submit" method="post">
+<form>
   <input type="text" id="name" placeholder="Nom du joueur">
-  <select>
+  <select id="category">
   <option>⚽ Foot</option>
   <option>🎮 Jeu Vidéo</option>
 </select>
-<input type="number" id="score" min="1" max="10" placeholder="Note /10">
-<button type="submit" onclick="return ajouterCarte();">Valider</button>
+<input type="number" id="note" min="1" max="10" placeholder="Note /10">
+<button type="button" onclick="addCard()">Valider</button>
+</form>
 <div id="list"></div>
-<script href="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
