@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreZone</title>
+</head>
+<body>
+    <h1>Bienvenue sur ScoreZone</h1>
+    <p>Votre destination pour vous challenger entre foot et jeux vidéo.</p>
+
+    <div>
+  <h2>Ronaldo</h2>
+  <p>⚽ Foot</p>
+  <p>Note : 10/10</p>
+</div>
+<form action="/submit" method="post">
+  <input type="text" id="name" placeholder="Nom du joueur">
+  <select>
+  <option>⚽ Foot</option>
+  <option>🎮 Jeu Vidéo</option>
+</select>
+<input type="number" id="score" min="1" max="10" placeholder="Note /10">
+<button type="submit" onclick="return ajouterCarte();">Valider</button>
+<div id="list"></div>
+<script href="script.js"></script>
+</body>
+</html>
